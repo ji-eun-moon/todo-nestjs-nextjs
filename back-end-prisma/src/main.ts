@@ -5,8 +5,8 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
-    .setTitle('API 문서 제목')
-    .setDescription('API 문서 설명')
+    .setTitle('JIEUN TODO APP API')
+    .setDescription('JIEUN TODO APP API Documentation')
     .setVersion('1.0')
     .addCookieAuth()
     .addServer(process.env.HOST)
@@ -20,6 +20,6 @@ async function bootstrap() {
     swaggerOptions: { persistAuthorization: true }, // 인증 정보를 유지
   });
 
-  await app.listen(3000);
+  await app.listen(4000);
 }
 bootstrap();
