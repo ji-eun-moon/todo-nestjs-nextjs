@@ -20,6 +20,6 @@ async function bootstrap() {
     swaggerOptions: { persistAuthorization: true }, // 인증 정보를 유지
   });
 
-  await app.listen(3000);
+  await app.listen(4000);
 }
 bootstrap();
